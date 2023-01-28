@@ -8,7 +8,7 @@
 // @description:zh-TW  bilibili直播默認切換為最高畫質
 // @description:zh-HK  bilibili直播默認切換為最高畫質
 // @namespace          https://github.com/linkwanggo
-// @version            2.1.0
+// @version            2.1.2
 // @author             linkwanggo
 // @match              *://live.bilibili.com/*
 // @exclude            *://live.bilibili.com/p*
@@ -55,7 +55,7 @@
       mutations.forEach(mutation => {
         mutation.addedNodes.forEach(node => {
           if (node.nodeName === 'VIDEO') {
-            window.setTimeout(process, 200)
+            window.setTimeout(process, 400)
             observer.disconnect()
           }
         })
